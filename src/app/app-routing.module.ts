@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { LayoutModule } from './layout/layout.module';
+import { CustomerbankdetailsComponent } from './layout/operational-execative/customerbankdetails/customerbankdetails.component';
 
 const routes: Routes = [
     // {
@@ -16,7 +17,8 @@ const routes: Routes = [
     {
         path: 'role',
         loadChildren : () => LayoutModule
-    }
+    },
+    {path:"",component:CustomerbankdetailsComponent},
 ];
 
 @NgModule({

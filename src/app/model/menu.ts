@@ -3,12 +3,13 @@ export class Menu {
         {
             oe: [
                 { path: 'dashboard', title: 'Dashboard', icon: 'pe-7s-graph', class: '' },
-                { path: 'cibil', title: 'CIBIL Status', icon: 'pe-7s-graph', class: '' }
+                { path: 'cibil', title: 'CIBIL Status', icon: 'pe-7s-graph', class: '' },
+                { path: 'CustomerBankDetails', title: 'CustomerBankDetails Status', icon: 'pe-7s-graph', class: '' }
+
             ],
             re: [
                 { path: 'dashboard', title: 'Dashboard', icon: 'pe-7s-graph', class: '' },
-                { path: 'cibil', title: 'CIBIL Status', icon: 'pe-7s-graph', class: '' },
-                { path: 'PreviousLoanDetails', title: 'PreviousLoanDetails', icon: 'pe-7s-graph', class: '' }
+                { path: 'cibil', title: 'CIBIL Status', icon: 'pe-7s-graph', class: '' }
             ],
             cm: [
                 {

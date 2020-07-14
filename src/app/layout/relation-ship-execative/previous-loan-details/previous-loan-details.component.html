@@ -1,0 +1,99 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+  
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" role="form">
+                <h2>Previous loan Register</h2>
+                  
+                <div class="form-group">
+                                   <label for="id" class="col-sm-3 control-label">Id*</label>
+                        <div class="col-sm-9">
+                                 <input type="text" id="id" placeholder="Id"  class="form-control" [(ngModel)]="s.pl.id"  name= "id" autofocus  >
+                        </div>
+           </div>
+
+                    <div class="form-group">
+                        <label for="remainingEmi" class="col-sm-3 control-label">Remaining Emi*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="remainingEmi" placeholder="Remaining Emi" class="form-control"  [(ngModel)]="s.pl.remainingEmi"  name= "remainingEmi"autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="remainingAmount" class="col-sm-3 control-label">Remaining Amount* </label>
+                        <div class="col-sm-9">
+                            <input type="number" id="remainingAmount" placeholder="Remaining Amount" [(ngModel)]="s.pl.remainingAmount"  class="form-control" name= "remainingAmount">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bankAccountNo" class="col-sm-3 control-label">BankAccountNo*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="bankAccountNo" placeholder="Bank AccountNo" [(ngModel)]="s.pl.bankdetails.bankAccountNo"  class="form-control" name= "bankAccountNo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bankAccountHolderName" class="col-sm-3 control-label">BankAccountHolder Name*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="bankAccountHolderName" placeholder="BankAccountHolder Name" [(ngModel)]="s.pl.bankdetails.bankAccountHolderName" class="form-control" name= "bankAccountHolderName">
+                        </div>
+                    </div>
+              
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" (click)="submitdata(s.pl)">Register</button>
+            </form> <!-- /form -->
+        </div>
+
+
+
+<!-- 2nd side start -->
+
+        <div class="col-md-6">
+          
+                <h1>Previous loan details</h1><br>
+              
+               
+    <table class="table table-striped">
+        <tbody >
+            <th> id</th>
+            <th> remainingEmi</th>
+            <th> remainingAmount</th>
+            <!-- <th> bid</th>
+            <th> bankAccountNo</th>
+            <th> bankAccountHolderName</th> -->
+            
+          <tr *ngFor='let e of pl'>
+           <td>{{e.id}}</td>
+            <td>{{e.remainingEmi}}</td>
+            <td>{{e.remainingAmount}}</td> 
+  
+     <!-- <div *ngFor='let a of e.bankdetails'>
+             <td>  {{a.bid}}</td> 
+            <td> {{a.bankAccountNo}} </td>
+             <td>{{a.bankAccountHolderName}}</td> 
+     </div> -->
+    </tr>   
+        </tbody>
+      </table>  
+
+     
+
+   
+         
+        </div>
+        </div>
+        </div> <!-- ./container -->

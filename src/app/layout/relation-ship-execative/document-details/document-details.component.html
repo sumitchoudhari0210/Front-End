@@ -1,0 +1,111 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" role="form">
+                <h2><b>Documents Details</b></h2>
+
+                <div class="form-group">
+                    <span for="addressProof" class="col-sm-3 control-label"><b>Address Proof</b><label style="color: red">*</label> </span>
+                <div class="col-sm-9">
+                    <input type="file" id="addressProof" name="addressProof" class="form-control"  (change)="selectAddressProof($event)">
+                </div>
+            </div>
+            <div class="form-group">
+                    <span for="bankStatement" class="col-sm-3 control-label"><b>Bank Statement</b><label style="color: red">*</label> </span>
+                <div class="col-sm-9">
+                    <input type="file" id="bankStatement" name="bankStatement" class="form-control" (change)="selectBankStatement($event)">
+                </div>
+            </div>
+            <div class="form-group">
+                    <span for="itrFile" class="col-sm-3 control-label"><b>ItrFile</b><label style="color: red">*</label> </span>
+                <div class="col-sm-9">
+                    <input type="file" id="itrFile" name="itrFile" class="form-control" (change)="selectItrFile($event)">
+                </div>
+            </div>
+            <div class="form-group">
+                <span for="photo" class="col-sm-3 control-label"><b>Photo</b><label style="color: red">*</label> </span>
+            <div class="col-sm-9">
+                <input type="file" id="photo" name="photo" class="form-control"  (change)="selectphoto($event)">
+            </div>
+        </div>
+        <div class="form-group">
+                <span for="postDatedCheck" class="col-sm-3 control-label"><b>PostDatedCheck</b><label style="color: red">*</label> </span>
+            <div class="col-sm-9">
+                <input type="file" id="postDatedCheck" name="postDatedCheck" class="form-control" (change)="selectPostDatedCheck($event)">
+            </div>
+        </div>
+        <div class="form-group">
+                <span for="signature" class="col-sm-3 control-label"><b>Signature</b><label style="color: red">*</label> </span>
+            <div class="col-sm-9">
+                <input type="file" id="signature" name="signature" class="form-control" (change)="selectsignature($event)">
+            </div>
+        </div>
+        <div class="form-group">
+            <span for="thumb" class="col-sm-3 control-label"><b>Thumb</b><label style="color: red">*</label> </span>
+        <div class="col-sm-9">
+            <input type="file" id="thumb" name="thumb" class="form-control"  (change)="selectThumb($event)">
+        </div>
+    </div>
+    <div class="form-group">
+            <span for="bankcheck" class="col-sm-3 control-label"><b>BankCheck</b><label style="color: red">*</label> </span>
+        <div class="col-sm-9">
+            <input type="file" id="bankcheck" name="bankcheck" class="form-control" (change)="selectBankcheck($event)">
+        </div>
+    </div>
+    <div class="form-group">
+            <span for="salarySlip" class="col-sm-3 control-label"><b>salarySlip</b><label style="color: red">*</label> </span>
+        <div class="col-sm-9">
+            <input type="file" id="salarySlip" name="salarySlip" class="form-control" (change)="selectSalarySlip($event)">
+        </div>
+    </div>
+    <div class="form-group">
+        <span for="adharcard" class="col-sm-3 control-label"><b>Adharcard</b><label style="color: red">*</label> </span>
+    <div class="col-sm-9">
+        <input type="file" id="adharcard" name="adharcard" class="form-control"  (change)="selectAdharcard($event)">
+    </div>
+</div>
+<div class="form-group">
+        <span for="pancard" class="col-sm-3 control-label"><b>PanCard</b><label style="color: red">*</label> </span>
+    <div class="col-sm-9">
+        <input type="file" id="pancard" name="pancard" class="form-control" (change)="selectPancard($event)">
+    </div>
+</div>
+<div class="form-group">
+        <span for="previousLoanStatement" class="col-sm-3 control-label"><b>Previous Loan Statement</b><label style="color: red">*</label> </span>
+    <div class="col-sm-9">
+        <input type="file" id="previousLoanStatement" name="previousLoanStatement" class="form-control" (change)="selectPreviousLoanStatement($event)">
+    </div>
+</div>
+ <!-- /.form-group -->
+ <div class="form-group">
+    <div class="col-sm-9 col-sm-offset-3">
+        <span class="help-block">*Required fields</span>
+    </div>
+</div>
+<button type="submit" class="btn btn-primary btn-block" (click)="saveDocuments()">Upload</button>
+<button type="reset"  class="btn btn-primary btn-block" (click)="reset()">Reset</button>
+
+            </form> <!-- /form -->
+        </div>
+        </div>
+        </div> <!-- ./container -->

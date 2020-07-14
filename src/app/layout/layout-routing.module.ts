@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 import { Screen1Component } from './screen1/screen1.component';
 import { Screen2Component } from './screen2/screen2.component';
-
 import { OperationalExecativeModule } from './operational-execative/operational-execative.module';
 import { CreditManagerModule } from './credit-manager/credit-manager.module';
 import { AccountHeadModule } from './account-head/account-head.module';
@@ -12,10 +11,8 @@ import { LoanDisbustmentModule } from './loan-disbustment/loan-disbustment.modul
 import { BranchManagerModule } from './branch-manager/branch-manager.module';
 import { RelationShipExecativeModule } from './relation-ship-execative/relation-ship-execative.module';
 import { MasterModuleModule } from './master-module/master-module.module';
-
 import { DashboardComponent } from './operational-execative/dashboard/dashboard.component';
 import { PreviousLoanDetailsComponent } from './relation-ship-execative/previous-loan-details/previous-loan-details.component';
-
 
 const routes: Routes = [
     {

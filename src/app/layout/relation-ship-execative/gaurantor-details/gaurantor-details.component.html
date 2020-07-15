@@ -1,0 +1,153 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" role="form">
+                <h2>Gaurantor details</h2>
+               
+                <div class="form-group">
+                                   <label for="id" class="col-sm-3 control-label">Id*</label>
+                        <div class="col-sm-9">
+                                 <input type="text" id="id" placeholder="Id"  class="form-control" [(ngModel)]="s.gd.id" name= "id" autofocus  >
+                        </div>
+           </div>
+
+                    <div class="form-group">
+                        <label for="gname" class="col-sm-3 control-label">Guarantor_Name*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gname" placeholder="Guarantor_Name" class="form-control"  [(ngModel)]="s.gd.gname"  name= "gname">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gdob" class="col-sm-3 control-label">Guarantor_DOB* </label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gdob" placeholder="Guarantor_DOB" [(ngModel)]="s.gd.gdob"  class="form-control" name= "gdob">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="grel" class="col-sm-3 control-label">Gaurantor Rel-With Cons*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="grel" placeholder="Guar_RelWithCo" [(ngModel)]="s.gd.grel"  class="form-control" name= "grel">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="gmobno" class="col-sm-3 control-label">Mobileno*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gmobno" placeholder="Guarantor_Mobileno" [(ngModel)]="s.gd.gmobno" class="form-control" name= "gmobno">
+                        </div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="gAdhar" class="col-sm-3 control-label">Guarantor Adhardno*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gAdhar" placeholder="Guarantor_Adharcardno" [(ngModel)]="s.gd.gAdhar" class="form-control" name= "gAdhar">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gmortageDetails" class="col-sm-3 control-label">Gaurantor-MortageDetails*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gmortageDetails" placeholder="Guarantor_MortageDetails" [(ngModel)]="s.gd.gmortageDetails" class="form-control" name= "gmortageDetails">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gjobdetails" class="col-sm-3 control-label">Guarantor-JobDetails*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gjobdetails" placeholder="guarantor_JobDetails" [(ngModel)]="s.gd.gjobdetails" class="form-control" name= "gjobdetails">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="glocalAddr" class="col-sm-3 control-label">Guarantor-LocalAddress*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="glocalAddr" placeholder="Guarantor_LocalAddress" [(ngModel)]="s.gd.glocalAddr" class="form-control" name= "glocalAddr">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gPermanentAddr" class="col-sm-3 control-label">Guarantor-PerAddress*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="gPermanentAddr" placeholder="Guarantor_PermanentAddress" [(ngModel)]="s.gd.gPermanentAddr" class="form-control" name= "gPermanentAddr">
+                        </div>
+                    </div>
+
+
+              
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" (click)="submitdata(s.gd)">Register</button>
+            </form> <!-- /form -->
+        </div>
+    
+        
+        <!-- 2nd side start -->
+
+        <div class="col-md-6">
+            <div class='panel panel-primary'> 
+                <div class='panel-heading'>
+                <h2>Customer Bank Details</h2>
+            </div>
+             <div class='panel-body'>
+                 <div class='table-responsive'>
+                  <table class='table'>
+                      <thead>
+                          <tr>
+                              <th>ID</th>
+                              <th>Gaurantor-Name</th>
+                              <th>Guarantor-DOB</th>
+                              <th> Guarantor-With Relation</th>
+                              <th>Guarantor-Mobileno</th>
+                              <th>Guarantor-Adharno</th>
+                              <th>Guarantor-MortageDetails</th>
+                              <th>Guarantor-JobDetails</th>
+                              <th>Guarantor-LocalAddress </th>
+                              <th>Guarantor-PermaAddress</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+          <tr *ngFor='let e of gd'>
+            <td>{{e.id}}</td>
+            <td>{{e.gname}}</td>
+            <td>{{e.gdob}}</td>
+            <td>{{e.grel}}</td> 
+            <td>{{e.gmobno}}</td> 
+            <td>{{e.gAdhar}}</td> 
+            <td>{{e.gmortageDetails}}</td> 
+            <td>{{e.gjobdetails}}</td> 
+            <td>{{e.glocalAddr}}</td> 
+            <td>{{e.gPermanentAddr}}</td> 
+            
+    
+           
+            <td> <button type="edit" class="btn btn-primary btn-block" (click)="editdata(e)">Edit</button>
+            </td>
+            <td><button type="delete" class="btn btn-primary btn-block" (click)=" deletedata(e)">Delete</button>
+            </td>
+        
+        </tr>
+        </tbody>
+      </table>
+    
+    </div>
+    </div>     
+        </div>
+        </div>
+        </div> <!-- ./container -->
+    

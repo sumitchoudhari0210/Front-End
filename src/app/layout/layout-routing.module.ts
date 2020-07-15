@@ -12,6 +12,9 @@ import { LoanDisbustmentModule } from './loan-disbustment/loan-disbustment.modul
 import { BranchManagerModule } from './branch-manager/branch-manager.module';
 import { RelationShipExecativeModule } from './relation-ship-execative/relation-ship-execative.module';
 import { MasterModuleModule } from './master-module/master-module.module';
+import { DashboardComponent } from './operational-execative/dashboard/dashboard.component';
+import { PreviousLoanDetailsComponent } from './relation-ship-execative/previous-loan-details/previous-loan-details.component';
+
 
 const routes: Routes = [
     {
@@ -32,6 +35,7 @@ const routes: Routes = [
                 path: 'screen2',
                 component: Screen2Component,
             },
+
         ],
     },
 ];

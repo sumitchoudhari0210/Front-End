@@ -7,6 +7,9 @@ export class Menu {
             ],
             re: [
                 { path: 'dashboard', title: 'Dashboard', icon: 'pe-7s-graph', class: '' },
+
+                { path: 'vehicledetails', title: 'Vehicle Details', icon: 'pe-7s-graph', class: '' }
+
                 { path: 'cibil', title: 'CIBIL Status', icon: 'pe-7s-graph', class: '' },
 
                 { path: 'document-details', title: 'DocumentDetails', icon: 'pe-7s-graph', class: '' }

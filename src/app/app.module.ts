@@ -49,10 +49,10 @@ export const createTranslateLoader = (http: HttpClient) => {
         })
     ],
 
+
     providers: [],
 
     providers: [CommonService],
-
 
     bootstrap: [AppComponent]
 })

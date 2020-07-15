@@ -13,11 +13,14 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonService } from './shared/common.service';
+
 
 
 
@@ -36,10 +39,8 @@ export const createTranslateLoader = (http: HttpClient) => {
     declarations: [AppComponent],
     imports: [
         BrowserModule,
-
         CommonModule,
         FormsModule,
-
         AppRoutingModule,
         BrowserAnimationsModule,
         LayoutModule,
@@ -53,8 +54,6 @@ export const createTranslateLoader = (http: HttpClient) => {
             }
         })
     ],
-
-
 
     providers: [],
 

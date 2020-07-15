@@ -1,0 +1,94 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" role="form">
+                <h2>Customer Bank details</h2>
+               
+                <div class="form-group">
+                                   <label for="id" class="col-sm-3 control-label">Id*</label>
+                        <div class="col-sm-9">
+                                 <input type="text" id="id" placeholder="Id"  class="form-control" [(ngModel)]="s.cbd.id" autofocus  >
+                        </div>
+                      </div>
+
+                    <div class="form-group">
+                        <label for="customerBankAccountNo" class="col-sm-3 control-label">Customer Bank Account No*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customerBankAccountNo" placeholder="customerBankAccountNo" class="form-control"  [(ngModel)]="s.cbd.customerBankAccountNo"  name= "customerBankAccountNo"autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerBankAccountHolderName" class="col-sm-3 control-label">Customer Bank Account HolderName* </label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customerBankAccountHolderName" placeholder="customerBankAccountHolderName" [(ngModel)]="s.cbd.customerBankAccountHolderName"  class="form-control" name= "customerBankAccountHolderName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="status" class="col-sm-3 control-label">Status*</label>
+             <div class="col-sm-9">
+                      <input type="number" id="status" placeholder="status"  class="form-control" [(ngModel)]="s.cbd.status"  class="form-control" name="status" >
+             </div>
+           </div>
+              
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" (click)="submitdata(s.cbd)">Register</button>
+            </form> <!-- /form -->
+        </div>
+       
+
+        <!-- 2nd side start -->
+
+        <div class="col-md-6">
+        <div class='panel panel-primary'> 
+            <div class='panel-heading'>
+            <h2>Customer Bank Details</h2>
+        </div>
+         <div class='panel-body'>
+             <div class='table-responsive'>
+              <table class='table'>
+                  <thead>
+                      <tr>
+                          <th>ID</th>
+                          <th>CustomerBankAccountNo</th>
+                          <th>CustomerBankAccountHolderName</th>
+                          <th>status</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+      <tr *ngFor='let c of cbd'>
+        id<td>{{c.id}}</td>
+        customerBankAccountNo<td>{{c.customerBankAccountNo}}</td>
+        customerBankAccountHolderName<td>{{c.customerBankAccountHolderName}}</td>
+        status <td>  {{c.status}}</td> 
+        
+
+       
+        <td> <button type="edit" class="btn btn-primary btn-block" (click)="editdata(c)">Edit</button>
+        </td>
+        <td><button type="delete" class="btn btn-primary btn-block" (click)=" deletedata(c)">Delete</button>
+        </td>
+    
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>     
+    </div>
+    </div>
+    </div> <!-- ./container -->

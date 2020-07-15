@@ -20,6 +20,7 @@ const RSrouting: Routes = [
     imports: [CommonModule,FormsModule,ReactiveFormsModule, RouterModule.forChild(RSrouting)],
 import { CibilstatusComponent } from './cibilstatus/cibilstatus.component';
 
+
 import { DocumentDetailsComponent } from './document-details/document-details.component';
 const RSrouting: Routes = [
     { path: 'dashboard', component: DashboardComponent },
@@ -57,10 +58,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const RSrouting: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'cibil', component: CibilstatusComponent },
-    { path: 'PreviousLoanDetails', component: PreviousLoanDetailsComponent },
 ];
 
 @NgModule({
+
+    declarations: [DashboardComponent, CibilstatusComponent],
+    imports: [CommonModule, RouterModule.forChild(RSrouting)],
+
     declarations: [DashboardComponent, CibilstatusComponent, PreviousLoanDetailsComponent],
     imports: [CommonModule,FormsModule,ReactiveFormsModule, RouterModule.forChild(RSrouting)],
 

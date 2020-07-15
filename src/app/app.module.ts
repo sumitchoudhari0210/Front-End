@@ -15,6 +15,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CommonService } from './shared/common.service';
+
+
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
     /* for development
@@ -45,7 +48,12 @@ export const createTranslateLoader = (http: HttpClient) => {
             }
         })
     ],
+
+
     providers: [],
+
+    providers: [CommonService],
+
     bootstrap: [AppComponent]
 })
 export class AppModule {}

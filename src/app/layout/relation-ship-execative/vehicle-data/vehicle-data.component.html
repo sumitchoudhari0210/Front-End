@@ -1,0 +1,158 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal" role="form">
+                <h2>Vehicle Details</h2>
+               
+                <div class="form-group">
+                                   <label for="id" class="col-sm-3 control-label">Id*</label>
+                        <div class="col-sm-9">
+                                 <input type="number" id="id" placeholder="Id"  class="form-control" [(ngModel)]="s.vehicle.id" autofocus  >
+                        </div>
+           </div>
+
+                    <div class="form-group">
+                        <label for="VehicleRegistrationNo" class="col-sm-3 control-label">Vehicle RegistrationN No*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleRegistrationNo" placeholder="Vehicle Registration No" class="form-control"  [(ngModel)]="s.vehicle.vehicleRegistrationNo"  name= "VehicleRegistrationNo"autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="VehicleEngineNo" class="col-sm-3 control-label">Vehicle Engine No* </label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleEngineNo" placeholder="Vehicle Engine No" [(ngModel)]="s.vehicle.vehicleEngineNo"  class="form-control" name= "VehicleEngineNo">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="VehicleChassisNo" class="col-sm-3 control-label">Vehicle Chassis No*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleChassisNo" placeholder="Vehicle Chassis No" [(ngModel)]="s.vehicle.vehicleChassisNo" class="form-control" name= "VehicleChassisNo">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="VehicleType" class="col-sm-3 control-label">Vehicle Type*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleType" placeholder="Vehicle Type" [(ngModel)]="s.vehicle.vehicleType" class="form-control" name= "VehicleType">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="VehicleCompany" class="col-sm-3 control-label">Vehicle Company*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleCompany" placeholder="Vehicle Company" [(ngModel)]="s.vehicle.vehicleCompany" class="form-control" name= "VehicleCompany">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="VehicleModel" class="col-sm-3 control-label">Vehicle Model*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleModel" placeholder="Vehicle Model" [(ngModel)]="s.vehicle.vehicleModel" class="form-control" name= "VehicleModel">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="VehicleModelNo" class="col-sm-3 control-label">Vehicle Model No*</label>
+                        <div class="col-sm-9">
+                            <input type="number" id="VehicleModelNo" placeholder="Vehicle Model No" [(ngModel)]="s.vehicle.vehicleModelNo" class="form-control" name= "VehicleModelNo">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="VehicleColor" class="col-sm-3 control-label">Vehicle Color*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="VehicleColor" placeholder="Vehicle Color" [(ngModel)]="s.vehicle.vehicleColor" class="form-control" name= "VehicleColor">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ActualPrice" class="col-sm-3 control-label">Actual Price*</label>
+                        <div class="col-sm-9">
+                            <input type="number" id="ActualPrice" placeholder="Actual Price" [(ngModel)]="s.vehicle.actualPrice" class="form-control" name= "ActualPrice">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="FuelType" class="col-sm-3 control-label">Fuel Type*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="FuelType" placeholder="Fuel Type" [(ngModel)]="s.vehicle.fuelType" class="form-control" name= "FuelType">
+                        </div>
+                    </div>
+              
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" (click)="submitdata(s.vehicle)">Register</button>
+            </form> <!-- /form -->
+        </div>
+        <!-- 2nd side start -->
+
+        <div class="col-md-6">
+          
+            <h2>VEHICLE DETAILS</h2>
+
+            <div class='panel panel-primary'>  
+                <div class='panel-heading'>  
+                   
+                </div>   
+                <div class='panel-body'>  
+                    <div class='table-responsive'>  
+                      <table class="table table-striped">
+    <tbody >
+        <th> id</th>
+        <th> VehicleRegistrationNo</th>
+        <th> VehicleEngineNo</th>
+        <th> VehicleChassisNo</th>
+        <th> VehicleType</th>
+        <th> VehicleCompany</th>
+        <th> VehicleModel</th>
+        <th> VehicleModelNo</th>
+        <th> VehicleColor</th>
+        <th> ActualPrice</th>
+        <th> FuelType</th>
+      <tr *ngFor='let veh of vehicle'>
+
+        <td>{{veh.id}}</td>
+        <td>{{veh.vehicleRegistrationNo}}</td>
+        <td>{{veh.vehicleEngineNo}}</td>
+        <td>{{veh.vehicleChassisNo}}</td>
+        <td>{{veh.vehicleType}}</td>
+        <td>{{veh.vehicleCompany}}</td>
+        <td>{{veh.vehicleModel}}</td>
+        <td>{{veh.vehicleModelNo}}</td>
+        <td>{{veh.vehicleColor}}</td>
+        <td>{{veh.actualPrice}}</td>
+        <td>{{veh.fuelType}}</td>
+
+       
+        <td> <button type="edit" class="btn btn-primary btn-block" (click)="editdata(veh)">Edit</button>
+        </td>
+        <td><button type="delete" class="btn btn-primary btn-block" (click)="deletedata(veh)">Delete</button>
+        </td>
+    
+    </tr>
+    </tbody>
+  </table>   
+                    </div>  
+                </div>  
+            </div>  
+           
+
+    </div>
+    </div>
+    </div> <!-- ./container -->

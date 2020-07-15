@@ -13,6 +13,7 @@ import { BranchManagerModule } from './branch-manager/branch-manager.module';
 import { RelationShipExecativeModule } from './relation-ship-execative/relation-ship-execative.module';
 import { MasterModuleModule } from './master-module/master-module.module';
 
+
 const routes: Routes = [
     {
         path: '',
@@ -32,6 +33,7 @@ const routes: Routes = [
                 path: 'screen2',
                 component: Screen2Component,
             },
+
         ],
     },
 ];

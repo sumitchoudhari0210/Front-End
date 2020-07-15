@@ -1,0 +1,95 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal" role="form">
+                <h2>Enquiry details</h2>
+               
+                <div class="form-group">
+                    <label for="cutomer_id" class="col-sm-3 control-label" >Customer Id*</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="cutomer_id" placeholder="Enter Customer Id" class="form-control" [(ngModel)]="ne.ed.cutomer_id" name="cutomer_id"autofocus>
+                    </div>
+                </div>
+
+                    <div class="form-group">
+                        <label for="customer_name" class="col-sm-3 control-label" >Customer Name*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_name" placeholder="Enter Customer Name" class="form-control" [(ngModel)]="ne.ed.customer_name" name="customer_name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer_dob" class="col-sm-3 control-label" >Customer DOB* </label>
+                        <div class="col-sm-9">
+                            <input type="number" id="customer_dob" placeholder="Enter Customer DOB"  class="form-control" [(ngModel)]="ne.ed.customer_dob" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer_mobno" class="col-sm-3 control-label"  >customerMobNo*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_mobno" placeholder="Enter Customer Mob No" class="form-control" [(ngModel)]="ne.ed.customer_mobno" name= "customer_mobno">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer_adharno" class="col-sm-3 control-label"  >Customer Adhar card No*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_adharno" placeholder="Enter Customer Adhar card No"  class="form-control" [(ngModel)]="ne.ed.customer_adharno" name= "customer_adharno">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer_localaddress" class="col-sm-3 control-label"  >Customer Local Address*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_localaddress" placeholder="Enter Customer Local Address"  class="form-control" [(ngModel)]="ne.ed.customer_localaddress" name= "customer_localaddress">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer_permanentaddress" class="col-sm-3 control-label">Customer Permanent Address*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_permanentaddress" placeholder="Enter Customer Loacal Address"  class="form-control" [(ngModel)]="ne.ed.customer_permanentaddress" name= "customer_permanentaddress">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer_loanamount_required" class="col-sm-3 control-label">Loan Ammount Required*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_loanamount_required" placeholder="Enter Loan Ammount Required"  class="form-control" [(ngModel)]="ne.ed.customer_loanamount_required" name= "customer_loanamount_required">
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <label for="customer_profession" class="col-sm-3 control-label">Customer Profession*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_profession" placeholder="Enter Customer Profession"  class="form-control" [(ngModel)]="ne.ed.customer_profession" name= "customer_profession">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer_gender" class="col-sm-3 control-label">Customer Gender*</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="customer_gender" placeholder="Enter Customer Gender"  class="form-control" [(ngModel)]="ne.ed.customer_gender" name= "customer_gender">
+                        </div>
+                    </div>
+              
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <span class="help-block">*Required fields</span>
+                    </div>
+                </div>
+               <button type="submit" class="btn btn-primary btn-block" (click)="submitdata(ne.ed)">Register</button>
+            </form> <!-- /form -->
+        </div>
+
+
+
